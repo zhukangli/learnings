@@ -35,32 +35,3 @@ hotfix-xxx分支是紧急bug修复分支，从master开出，修复完毕后合�
 3. 上线    
 4. 把master分支更新到develop分支上保证develop分支代码最新  
 
-
-# 项目更新
-
-铂涛旅行商旅版更新时都会从预生产机器10.21.2.186相应的目录下去拉取更新源数据，如果某个应用需要更新，则把该应用需要更新的数据存放到该应用10.21.2.186的更新源目录里。
- 
-1、应用对应的更新源目录如下（10.21.2.186）：
-#api和company存放于 /data/update_source/front目录下：
-api更新源存放目录：  /data/update_source/front/api/
-company更新源目录： /data/update_source/front/company/
-
-#manage、agency和 charge存放于/data/update_source/admin目录下：
-manage更新源目录： /data/update_source/admin/manage/   
- agency更新源目录： /data/update_source/admin/agency/   
- charge更新源目录： /data/update_source/admin/charge/   
-
-2、更新操作如下（以更新api为例）：
- 1）备份，更新前建议可以先备份，进入到 /data/update_source/ 目录
-     cp  front/api   -R   ./backup/当前日期_api
-      
- 2）更新数据
-    先进入到api更新源目录，然后删除以前的数据。
-
-然后把需要更新的数据放入到目录里即可。
-注: 存放的是已解压的数据文件，不是war包
-
-   其它不需要更新的应用的目录则不需要动。
- 
-
-3、运维人员通过网页更新。
