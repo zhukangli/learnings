@@ -1,0 +1,49 @@
+# Created by .ignore support plugin (hsz.mobi)
+# -- Eclipse
+.mymetadata
+**/bin/
+**/.classpath
+**/.project
+**/.settings/
+**/.metadata/
+**/.myeclipse/
+**/.externalToolBuilders/
+
+# -- Intellij
+**/.idea/
+**/*.iml
+**/*.iws
+**/out/
+
+# -- Mac
+**/.DS_Store
+
+# -- Maven
+**/log/
+**/target/
+**/*.versionsBackup
+
+# -- bower
+**/bower_components/
+
+# -- node
+**/node_modules/
+
+# -- tar
+**/*.tar.gz
+**/*.rar
+
+# -- npm
+**/npm-debug.log
+
+# -- upload directory
+**/upload/
+/.settings
+/.project
+/target/
+/bin/
+/target
+
+# -- tomcat
+catalina.base_IS_UNDEFINED
+
