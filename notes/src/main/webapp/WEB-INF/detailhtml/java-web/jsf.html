@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head id="Head">
+<title>NotesJava - 专注于Java技术</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta id="metaKeywords" name="keywords" content="java,j2ee,云笔记,blog,java云笔记,java笔记,java博客,javaweb" />
+ <link rel="stylesheet" href="../../content/css/zTreeStyle.css" type="text/css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="../../content/css/style.css" />
+<script type="text/javascript" src="../../content/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../content/js/jquery.ztree.core.js"></script>
+ <SCRIPT type="text/javascript" >
+ var zTreeObj;
+ // zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
+ var setting = {
+	callback: {
+		onClick: zTreeOnClick
+	}
+		 
+		 
+ };
+ // zTree 的数据属性，深入使用请参考 API 文档（zTreeNode 节点数据详解）
+ var zNodes = [
+ {id:01,name:"Java-core", open:true, children:[
+    {id:0101,name:"集合",url:"java-core/collection.html","target":"_self"},
+    {id:0102,name:"反射"},
+    {name:"泛型"},
+    {name:"IO"},
+    {name:"并发"},
+    {name:"设计模式GOF"},
+    {name:"其他"}]},
+{name:"Java-web", open:true, children:[
+    {name:"网络IO"}, 
+    {name:"日志工具"},
+    {name:"任务调度框架"}, 
+    {name:"缓存框架"}, 
+    {name:"网络安全"},
+    {name:"Spring"}, 
+    {name:"Hibernate"}, 
+    {name:"Mybatis"}, 
+    {name:"Struts"}, 
+    {name:"SpringMVC"},
+    {name:"Lucence"},
+    {name:"工作流"},
+    {name:"JFinal"},
+    {name:"OSGI"},
+    {name:"报表"},
+    {name:"JSF"},
+    {name:"WebService"}
+    ]},
+{name:"JAVA服务器", open:true, children:[
+    {name:"Tomcat"},
+    {name:"Nginx"}]},
+{name:"JAVA开发/构建工具", open:true, children:[
+    {name:"Maven"}, 
+    {name:"ant"},
+    {name:"Jenkins"},
+    {name:"Eclispe"},
+    {name:"SVN"},
+    {name:"GIT"},]},   
+ {name:"数据库", open:true, children:[
+    {name:"关系型数据库"}, 
+    {name:"NoSql"}]},
+ {name:"Linux", open:true, children:[
+    {name:"基础篇"}, {name:"服务器篇"}]} ,
+{name:"大数据", open:true, children:[
+     {name:"Hadoop"}, {name:"Spark"}]},
+{name:"前端", open:true, children:[
+     {name:"JavaScript"}, 
+     {name:"Jquery"},
+     {name:"Html+CSS"},
+     {name:"JSP"}]}
+ ];
+ $(document).ready(function(){
+    zTreeObj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+ });
+ 
+ function zTreeOnClick(event, treeId, treeNode) {
+	   
+	};
+ 
+ 
+  </SCRIPT>
+
+
+
+</head>
+<body>
+	<form name="Form1" method="post" action="default.aspx" id="Form1">
+		<div>
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+		</div>
+
+
+		<div id="hd_info">
+			<div id="cnts">
+				<div id="site_nav">
+					« <a href="" title="程序员的网上家园">回到首页</a> | <a
+						href="http://blog.csdn.net/">CSDN博客</a> | <a
+						href="http://stackoverflow.com/">stackoverflow</a> | <a
+						href="http://www.cnblogs.com">博客园</a> | <a
+						href="http://zhihu.com">知乎</a> | <a
+						href="">下载</a>
+				</div>
+				<div id="login_area">
+					<span id="span_userinfo"></span>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="header">
+			<div id="logo">
+				<h1>
+					<a id="Header1_TitleLink" href="http://www.java-web.cn/"><!--  <img
+						src="../../content/imgs/logo.png" style="border-width: 0px;" /> -->
+						Java云笔记<span style="color:black;font-size:14px;">  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp; 技术改变世界</span>
+						</a>
+				</h1>
+			</div>
+		</div>
+
+		<div id="main">
+			<h2>
+				java-web思维导图<img src="../../content/imgs/rss.gif"
+					border="0" alt="RSS" align="absmiddle" />
+			</h2>
+			
+			<div class="post">
+				<img src="../../content/css/img/java-web.gif" style="width: 100%;" ></img>
+
+			</div>
+
+
+			<h2>
+				java-core思维导图<img src="../../content/imgs/rss.gif"
+					border="0" alt="RSS" align="absmiddle" />
+			</h2>
+
+			<div class="post">
+				<img src="../../content/css/img/java-core1.png" style="width: 100%;" ></img>
+				<img src="../../content/css/img/java-core2.png" style="width: 100%;" ></img>
+				<img src="../../content/css/img/java-core3.png" style="width: 100%;" ></img>
+			</div>
+		</div>
+		
+		<div id="authors">
+	
+
+			<h2>
+				网站分类
+				<!--首页技术区-->
+			</h2>
+			<ul id="treeDemo" class="ztree"></ul>
+
+			<H2>下载专区</H2>
+
+			<ul class="NavLink">
+
+				<li class="navtitle"> <a
+					id="SiteCatalog1_LinkList_ctl01_Link" class="navlist"
+					href="http://www.blogjava.net/">各类jar包</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl02_Link" class="navlist"
+					href="http://www.blogjava.net/beginner">Maven模块</a></li>
+
+			</ul>
+			<h2>免责说明</h2>
+			<ul>
+				<li>网站为Java技术分享，如有侵犯作者版权，请联系站主，我们将在24小时内删除。
+				<br/>联系QQ：269259724
+				</li>
+			</ul>
+
+
+			<h2>统计信息</h2>
+			<ul>
+				<li>博客 -
+					<div id="aggstats">18812</div>
+				</li>
+				<li>随笔 -
+					<div id="aggstats">118199</div>
+				</li>
+				<li>文章 -
+					<div id="aggstats">39922</div>
+				</li>
+				<li>评论 -
+					<div id="aggstats">167109</div>
+				</li>
+				<!--<li>
+		<a id="AggStats1_PingtrackCount" class="TrackBackLink" href="default.aspx?id=-12">1846</a>-->
+				</li>
+			</ul>
+
+			<h2>友情链接</h2>
+			<ul>
+				<li class="navlinkli"><a href="http://www.springside.org.cn/"
+					target="_blank">springside</a></li>
+				<li><a href="http://www.easyjf.com" target="_blank">EasyJF开源团队</a></li>
+				<li><a href="http://www.eclipseworld.org/" target="_blank">中国Eclipse社区</a></li>
+				<li><a href="http://blog.51cto.com/" target="_blank">51CTO技术博客</a></li>
+				<li><a href="http://ajava.org/" target="_blank">AJava</a></li>
+				<li><a href="http://www.javathinker.org" target="_blank">JavaThinker</a></li>
+				<li><a href="http://www.javaswingchina.com" target="_blank">javaswingchina</a></li>
+			</ul>
+
+
+
+		</div>
+		<div id="footer">
+
+			<div style="text-align: left; margin-left: 230px;">
+				<a href="https://www.jpush.cn/" target="_blank">推送服务</a>&nbsp;&nbsp;<a
+					href="http://job.cnblogs.com/">程序员招聘</a>&nbsp;&nbsp;<a
+					href="http://kb.cnblogs.com/">知识库</a>&nbsp;&nbsp;<a
+					href="http://www.cnblogs.com/cate/all/">博客园最新博文</a>&nbsp;&nbsp;<a
+					href="http://q.cnblogs.com">博问</a>
+			</div>
+
+			<a href="http://www.miibeian.gov.cn">沪ICP备09004260号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			&#169; 2016&nbsp;<a id="Footer1_lnkSite"
+				href="http://www.blogjava.net/">BlogJava</a>. 版权所有. 保留所有权利
+		</div>
+	</form>
+	<script type="text/javascript" src="/script/ShowHidden.js"></script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-476124-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>

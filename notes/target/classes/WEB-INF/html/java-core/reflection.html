@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head id="Head">
+<title>NotesJava - 专注于Java技术</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta id="metaKeywords" name="keywords" content="java,j2ee,云笔记,blog,java云笔记,java笔记,java博客,javaweb" />
+ <link rel="stylesheet" href="../../content/css/zTreeStyle.css" type="text/css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="../../content/css/style.css" />
+<script type="text/javascript" src="../../content/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../content/js/jquery.ztree.core.js"></script>
+ <SCRIPT type="text/javascript" >
+ var zTreeObj;
+ // zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
+ var setting = {};
+ // zTree 的数据属性，深入使用请参考 API 文档（zTreeNode 节点数据详解）
+ var zNodes = [
+ {name:"Java-core", open:true, children:[
+    {name:"集合"},
+    {name:"反射"},
+    {name:"泛型"},
+    {name:"IO"},
+    {name:"并发"},
+    {name:"设计模式GOF"},
+    {name:"其他"}]},
+{name:"Java-web", open:true, children:[
+    {name:"网络IO"}, 
+    {name:"日志工具"},
+    {name:"任务调度框架"}, 
+    {name:"缓存框架"}, 
+    {name:"网络安全"},
+    {name:"Spring"}, 
+    {name:"Hibernate"}, 
+    {name:"Mybatis"}, 
+    {name:"Struts"}, 
+    {name:"SpringMVC"},
+    {name:"Lucence"},
+    {name:"工作流"},
+    {name:"JFinal"},
+    {name:"OSGI"},
+    {name:"报表"},
+    {name:"JSF"},
+    {name:"WebService"}
+    ]},
+{name:"JAVA服务器", open:true, children:[
+    {name:"Tomcat"},
+    {name:"Nginx"}]},
+{name:"JAVA开发/构建工具", open:true, children:[
+    {name:"Maven"}, 
+    {name:"ant"},
+    {name:"Jenkins"},
+    {name:"Eclispe"},
+    {name:"SVN"},
+    {name:"GIT"},]},   
+ {name:"数据库", open:true, children:[
+    {name:"关系型数据库"}, 
+    {name:"NoSql"}]},
+ {name:"Linux", open:true, children:[
+    {name:"基础篇"}, {name:"服务器篇"}]} ,
+{name:"大数据", open:true, children:[
+     {name:"Hadoop"}, {name:"Spark"}]},
+{name:"前端", open:true, children:[
+     {name:"JavaScript"}, 
+     {name:"Jquery"},
+     {name:"Html+CSS"},
+     {name:"JSP"}]}
+ ];
+ $(document).ready(function(){
+    zTreeObj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+ });
+  </SCRIPT>
+
+
+
+</head>
+<body>
+	<form name="Form1" method="post" action="default.aspx" id="Form1">
+		<div>
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+		</div>
+
+
+		<div id="hd_info">
+			<div id="cnts">
+				<div id="site_nav">
+					« <a href="" title="程序员的网上家园">回到首页</a> | <a
+						href="http://blog.csdn.net/">CSDN博客</a> | <a
+						href="http://stackoverflow.com/">stackoverflow</a> | <a
+						href="http://www.cnblogs.com">博客园</a> | <a
+						href="http://zhihu.com">知乎</a> | <a
+						href="">下载</a>
+				</div>
+				<div id="login_area">
+					<span id="span_userinfo"></span>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="header">
+			<div id="logo">
+				<h1>
+					<a id="Header1_TitleLink" href="http://www.java-web.cn/"><img
+						src="../../content/imgs/logo.png" style="border-width: 0px;" /></a>
+				</h1>
+			</div>
+		</div>
+
+		<div id="main">
+
+
+			<h2>
+				首页技术区最新随笔<a href='http://www.blogjava.net/rss'>(rss)</a> <a
+					href="http://www.blogjava.net/rss"><img src="../../content/imgs/rss.gif"
+					border="0" alt="RSS" align="absmiddle" /></a>
+			</h2>
+			<div id="_dfd8419cf04_divPagerLink" class="PagerLink">
+				<a href="http://www.blogjava.net/GoogleSiteSearch.htm">搜索</a>&nbsp;&nbsp;<a
+					href="/requireregister.aspx">注册</a>&nbsp;&nbsp;<a
+					id="_dfd8419cf04_ListTitle2_ListLink"
+					href="/default.html?OnlyTitle=1">仅列出标题</a>&nbsp;&nbsp<a
+					id="_dfd8419cf04_lnkTitleView" href="homepage.aspx">新闻风格</a>&nbsp;&nbsp;
+			</div>
+
+			<div class="post">
+				<h3>
+					<a
+						href="http://www.blogjava.net/jacky9881/archive/2016/03/08/429552.html">配置Nginx
+						缓存服务器</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: @import
+					url(http://www.blogjava.net/CuteSoft_Client/CuteEditor/Load.ashx?type=style&file=SyntaxHighlighter.css);@import
+					url(/css/cuteeditor.css); @import
+					url(http://www.blogjava.net/CuteSoft_Client/C...&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/jacky9881/archive/2016/03/08/429552.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-03-08 20:29&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/jacky9881/" class="clsSubText">笑看人生</a><a
+							href="http://www.blogjava.net/jacky9881/archive/2016/03/08/429552.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:219】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/zuxiong/archive/2016/03/08/429572.html">jenkins的使用总结</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要:
+					jenkins，作为开源世界的持续集成工具（CI），表现其实不错了。虽然不能与Atlassian的bamboo相比，别人是商业版本。<br>我使用的是它的WAR包版本，可以从jenkins
+					官网下载。个人建议在tomcat7.0.32版本以上运行。&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/zuxiong/archive/2016/03/08/429572.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-03-08 18:20&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/zuxiong/" class="clsSubText">zuxiong</a><a
+							href="http://www.blogjava.net/zuxiong/archive/2016/03/08/429572.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:159】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/zuxiong/archive/2016/03/03/429525.html">任务框架quartz的misfire的理解</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: quartz，java世界里面的任务管理容器。<br>至于为什么会有misfire这个概念，我想可以重这三个方面来进行说明：<br>1
+					所有的线程都在忙于更高优先级的任务<br>2 任务本身CRASH了<br>3
+					代码的BUG，导置错误的设置了JOB&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/zuxiong/archive/2016/03/03/429525.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-03-03 15:58&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/zuxiong/" class="clsSubText">zuxiong</a><a
+							href="http://www.blogjava.net/zuxiong/archive/2016/03/03/429525.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:716】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/zuxiong/archive/2016/03/02/429517.html">一致性hash算法(consistent
+						hashing and HRW )</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: 为什么需要一致性hash算法？<br>在缓存应用层面，如何保证数据访问的平横性，单调性？<br>平横性：主要是数据的平均分布，及当集群中某一个缓存服务失效，数据也能够正常分布<br>单调性：当数据插入某个缓存之后，再次调用，同样会落到对应的缓存上面。&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/zuxiong/archive/2016/03/02/429517.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-03-02 18:36&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/zuxiong/" class="clsSubText">zuxiong</a><a
+							href="http://www.blogjava.net/zuxiong/archive/2016/03/02/429517.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:593】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/cheneyfree/archive/2016/02/29/429485.html">谈谈前台、中/后台产品设计</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要:
+					最近在做一款前端产品的设计，产品前期的调研相对顺利，但在设计过程中挣扎过、纠结过、兴奋过也郁闷过，五味杂陈。技术出身的产品经理，设计产品时往往容易陷入技术思维的陷阱，将简单的功能复杂化、将用户想象成和自己一样的思维方式去过度设计，设计出来的原型稿历经几轮PK讨论下来，精疲力尽之余不断在反思和审视自己产品观念中的那些劣根，拔掉方能成长。<br>
+					中/后台产品的设计从事较多，而在做过几轮前端产品设计后也逐渐发现它的可爱之处。于是想梳理一些对前台、中/后台产品设计方法上的区别之处，以更加全面的视角去看待产品的规划和设计。&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/cheneyfree/archive/2016/02/29/429485.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-02-29 23:10&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/cheneyfree/" class="clsSubText">cheng</a><a
+							href="http://www.blogjava.net/cheneyfree/archive/2016/02/29/429485.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:748】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/lzhidj/archive/2016/02/27/429461.html">最新发布：《Android自定义组件开发详解》</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要:
+					继两年前发布《轻松搞定extjs》之后，本人的第二个作品。下载地址：http://download.csdn.net/detail/lifenote/9445898封面
+					1序 2捐助说明 5目 录 7第一章 &nbsp;View的绘图流程 121.1、概述 121.2、Activity的组成结构
+					131.3、View树的绘图流程 151.3.1 测量组件大小 161.3.2 确定子组件的位置 17...&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/lzhidj/archive/2016/02/27/429461.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-02-27 16:08&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/lzhidj/" class="clsSubText">李赞红</a><a
+							href="http://www.blogjava.net/lzhidj/archive/2016/02/27/429461.html#Feedback"
+							class="CommentLink">【评论:1】</a>【阅读:876】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/jacky9881/archive/2016/02/27/429458.html">使用MyCat实现MySQL的分片处理和读写分离</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: 不讲原理，直接上步骤：
+					1.下载MyCat，Mycat-server-1.4-release-20151019230038-linux.tar 2.
+					解压到/usr/mycat目录下： &nbsp; &nbsp; [root@localhost mycat]# tar -xvf
+					&nbsp;Mycat-server-1.4-release-20151019230038-linux.t...&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/jacky9881/archive/2016/02/27/429458.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-02-27 15:28&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/jacky9881/" class="clsSubText">笑看人生</a><a
+							href="http://www.blogjava.net/jacky9881/archive/2016/02/27/429458.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:145】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/weir/archive/2016/02/26/429445.html">最新Hadoop-2.7.2+hbase-1.2.0+zookeeper-3.4.8
+						HA高可用集群配置安装</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: Ip &nbsp;主机名 程序 进程 192.168.128.11 h1
+
+					Jdk Hadoop hbase Namenode DFSZKFailoverController Hamster
+
+
+					192.168.128.12 h2 Jdk Hadoop hbase Namenode
+					DFSZKFailoverCont...&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/weir/archive/2016/02/26/429445.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-02-26 16:23&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/weir/" class="clsSubText">威尔</a><a
+							href="http://www.blogjava.net/weir/archive/2016/02/26/429445.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:844】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/zuxiong/archive/2016/02/24/429405.html">spring
+						mvc中的Sugar ，你要来点吗？</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: spring
+					mvc作为展示层的组件，从参数预处理，验证，拦截，渲染。无不考虑的细致入微，你所要的做的，只是接口实现，切面接入，简单配置。<br>今天我们以分页功能展开来说明，如何把我们复杂的参数处理从控制器进行剥离！&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/zuxiong/archive/2016/02/24/429405.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-02-24 10:49&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/zuxiong/" class="clsSubText">zuxiong</a><a
+							href="http://www.blogjava.net/zuxiong/archive/2016/02/24/429405.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:1255】&nbsp;
+					</p>
+				</h4>
+				<h3>
+					<a
+						href="http://www.blogjava.net/nkjava/archive/2016/02/15/429325.html">MAVEN命令不断完善中。。。</a>
+				</h3>
+				<h4>
+					&nbsp;&nbsp;&nbsp;&nbsp; 摘要: MAVEN命令 Code highlighting produced by
+					Actipro CodeHighlighter (freeware) http://www.CodeHighlighter.com/
+
+					-->http://www.mvnrepository.com&nbsp;&nbsp;#中央仓库
+
+					mvn&nbsp;eclipse:eclipse&nbsp;&nbs...&nbsp;&nbsp;<a
+						href='http://www.blogjava.net/nkjava/archive/2016/02/15/429325.html'>阅读全文</a>
+					<p class="postfoot" align="right">
+						2016-02-15 17:13&nbsp;作者:&nbsp;<a
+							href="http://www.blogjava.net/nkjava/" class="clsSubText">草原上的骆驼</a><a
+							href="http://www.blogjava.net/nkjava/archive/2016/02/15/429325.html#Feedback"
+							class="CommentLink">【评论:0】</a>【阅读:512】&nbsp;
+					</p>
+				</h4>
+			</div>
+			<h6>
+				<div class="PagerLink"></div>
+			</h6>
+			<div id="adRightTop"></div>
+
+		</div>
+		
+		<div id="authors">
+
+
+			<h2>
+				网站分类
+				<!--首页技术区-->
+			</h2>
+			<ul id="treeDemo" class="ztree"></ul>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<h2>宣传语</h2>
+			<ul>
+				<li class="NavLinkli"
+					style="font-size: 13px; color: blue; margin-right: 3px">
+					发表原创精品文章,<br> 共建精品Java社区!
+				</li>
+			</ul>
+
+
+			<H2>网站分类</H2>
+
+			<ul class="NavLink">
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl01_RssLink"
+					href="http://www.blogjava.net/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl01_Link" class="navlist"
+					href="http://www.blogjava.net/">首页技术区(0)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl02_RssLink"
+					href="http://www.blogjava.net/beginner/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl02_Link" class="navlist"
+					href="http://www.blogjava.net/beginner">新手区(1)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl03_RssLink"
+					href="http://www.blogjava.net/life/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl03_Link" class="navlist"
+					href="http://www.blogjava.net/life">非技术区(0)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl04_RssLink"
+					href="http://www.blogjava.net/misc/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl04_Link" class="navlist"
+					href="http://www.blogjava.net/misc">其他技术区(0)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl05_RssLink"
+					href="http://www.blogjava.net/news/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl05_Link" class="navlist"
+					href="http://news.blogjava.net/">业界新闻区(0)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl06_RssLink"
+					href="http://www.blogjava.net/job/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl06_Link" class="navlist"
+					href="http://www.blogjava.net/job">求职招聘区(0)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl07_RssLink"
+					href="http://www.blogjava.net/all/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl07_Link" class="navlist"
+					href="http://www.blogjava.net/all?OnlyTitle=1">所有随笔区(1)</a></li>
+
+				<li class="navtitle"><a
+					id="SiteCatalog1_LinkList_ctl08_RssLink"
+					href="http://www.blogjava.net/comment/rss">(rss)</a> <a
+					id="SiteCatalog1_LinkList_ctl08_Link" class="navlist"
+					href="http://www.blogjava.net/comment">最新评论区(7)</a></li>
+
+			</ul>
+
+
+
+			<H2>其他分类</H2>
+
+			<ul class="NavLink">
+
+				<li class="navtitle"><a
+					id="Sitecatalog2_LinkList_ctl01_RssLink"
+					href="http://www.blogjava.net/ask/rss">(rss)</a> <a
+					id="Sitecatalog2_LinkList_ctl01_Link" class="navlist"
+					href="http://www.blogjava.net/ask">提问区(0)</a></li>
+
+				<li class="navtitle"><a
+					id="Sitecatalog2_LinkList_ctl02_RssLink"
+					href="http://www.blogjava.net/quoted/rss">(rss)</a> <a
+					id="Sitecatalog2_LinkList_ctl02_Link" class="navlist"
+					href="http://www.blogjava.net/quoted">转载区(0)</a></li>
+
+			</ul>
+
+
+			<span id="span_userinfo2"><script type="text/javascript"
+					src="/GetLoginInfo.aspx"></script></span>
+			<script type="text/javascript">
+				document.getElementById("span_userinfo").innerHTML = document
+						.getElementById("span_userinfo2").innerHTML;
+				document.getElementById("span_userinfo2").innerHTML = '';
+			</script>
+			<script language="JavaScript">
+				function SearchGoogle() {
+					var keystr = encodeURIComponent(document
+							.getElementById('q').value);
+					window.location = "/GoogleSiteSearch.htm?keyword=" + keystr;
+				}
+
+				function EnterSearch(event) {
+					if (event.keyCode == 13) {
+						SearchGoogle();
+						return false;
+					}
+					return true;
+				}
+			</script>
+			<h2>Google站内搜索</h2>
+			<h4>
+				<input style="WIDTH: 130px" type="text" name="q" id="q"
+					onkeydown="return EnterSearch(event);">&nbsp;<input
+					onclick="SearchGoogle()" type="button" value="搜索" name="sa">
+			</h4>
+
+			<h2>24小时内最热随笔</h2>
+			<div class="hot_post">
+
+				<ul class="NavLink">
+
+					<li class="NavLinkli">1. <a
+						id="TopViewPost1_rptTopPostList_ctl01_lnkTeam"
+						href="http://www.blogjava.net/tjyhy590/archive/2016/03/09/429579.html">前端内容展示操作</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+
+			<h2>统计信息</h2>
+			<ul>
+				<li>博客 -
+					<div id="aggstats">18812</div>
+				</li>
+				<li>随笔 -
+					<div id="aggstats">118199</div>
+				</li>
+				<li>文章 -
+					<div id="aggstats">39922</div>
+				</li>
+				<li>评论 -
+					<div id="aggstats">167109</div>
+				</li>
+				<!--<li>
+		<a id="AggStats1_PingtrackCount" class="TrackBackLink" href="default.aspx?id=-12">1846</a>-->
+				</li>
+			</ul>
+
+
+			<h2>订阅</h2>
+			<ul>
+				<li><a href="http://www.blogjava.net/rss"><img
+						src="images/rss2.gif" border="0" /></a></li>
+				<li><a
+					href="http://fusion.google.com/add?feedurl=http%3A//www.blogjava.net/rss"
+					target="_blank"><img src="/images/o_sub_google.gif" border="0"
+						alt="订阅到Google阅读" /></a></li>
+			</ul>
+			<h2>Blog客户端API</h2>
+			<ul>
+				<li><a href="http://dudu.cnblogs.com/articles/411388.html">MetaWeblog</a></li>
+			</ul>
+			<h2>推荐客户端</h2>
+			<ul>
+				<li><a href="http://www.cnblogs.com/dudu/articles/495718.html">Windows
+						Live Writer</a></li>
+			</ul>
+
+			<h2>友情链接</h2>
+			<ul>
+				<li class="navlinkli"><a href="http://www.springside.org.cn/"
+					target="_blank">springside</a></li>
+				<li><a href="http://www.easyjf.com" target="_blank">EasyJF开源团队</a></li>
+				<li><a href="http://www.eclipseworld.org/" target="_blank">中国Eclipse社区</a></li>
+				<li><a href="http://blog.51cto.com/" target="_blank">51CTO技术博客</a></li>
+				<li><a href="http://ajava.org/" target="_blank">AJava</a></li>
+				<li><a href="http://www.javathinker.org" target="_blank">JavaThinker</a></li>
+				<li><a href="http://www.javaswingchina.com" target="_blank">javaswingchina</a></li>
+			</ul>
+
+
+
+		</div>
+		<div id="footer">
+
+			<div style="text-align: left; margin-left: 230px;">
+				<a href="https://www.jpush.cn/" target="_blank">推送服务</a>&nbsp;&nbsp;<a
+					href="http://job.cnblogs.com/">程序员招聘</a>&nbsp;&nbsp;<a
+					href="http://kb.cnblogs.com/">知识库</a>&nbsp;&nbsp;<a
+					href="http://www.cnblogs.com/cate/all/">博客园最新博文</a>&nbsp;&nbsp;<a
+					href="http://q.cnblogs.com">博问</a>
+			</div>
+
+			<a href="http://www.miibeian.gov.cn">沪ICP备09004260号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			&#169; 2016&nbsp;<a id="Footer1_lnkSite"
+				href="http://www.blogjava.net/">BlogJava</a>. 版权所有. 保留所有权利
+		</div>
+	</form>
+	<script type="text/javascript" src="/script/ShowHidden.js"></script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-476124-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</body>
+</html>
