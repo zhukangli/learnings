@@ -1,4 +1,4 @@
-package conley.zhu.entity.VO;
+package com.conley.zhu.entity.VO;
 
 /**
  * Created by Conley on 2017/4/22.
@@ -7,6 +7,15 @@ public class UserVO {
     private Long id;
     private String name;
     private Integer age;
+
+    public UserVO(Long id, String name, Integer age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    public UserVO() {
+    }
 
     public Long getId() {
         return id;

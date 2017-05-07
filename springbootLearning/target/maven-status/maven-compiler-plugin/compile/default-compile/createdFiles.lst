@@ -1,3 +1,5 @@
-conley\zhu\web\UserController.class
-conley\zhu\entity\VO\UserVO.class
-conley\zhu\App.class
+com\conley\zhu\App.class
+com\conley\zhu\web\HelloCntroller.class
+com\conley\zhu\web\UserController.class
+com\conley\zhu\Swagger2.class
+com\conley\zhu\entity\VO\UserVO.class
